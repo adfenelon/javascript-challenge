@@ -23,7 +23,7 @@ function buildtable(UFOdata) {
     });
 }
 
-// // call the build table function with non filtered data
+// // call the build table function with filtered data
 
 function handleClick() {
     var date = d3.select("#datetime").property("value");
@@ -37,5 +37,6 @@ function handleClick() {
     buildtable(outThere)
 };
 
+// call the build table function with non-filtered data
 buildtable(tableData);
 
